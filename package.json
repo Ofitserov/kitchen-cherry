@@ -1,0 +1,40 @@
+{
+  "name": "new_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "cosmiconfig": "^2.1.1",
+    "css-mqpacker": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-less": "^3.3.0",
+    "gulp-minify": "0.0.14",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.0.0",
+    "onscreen": "^1.2.0",
+    "postcss-clean": "^1.0.2",
+    "postcss-reporter": "^3.0.0",
+    "postcss-sprites": "^4.1.1",
+    "pump": "^1.0.2",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "onscreen": "^1.2.0"
+  }
+}

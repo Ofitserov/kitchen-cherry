@@ -1,0 +1,133 @@
+.about {
+  .container-about();
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.low-price {
+  .for-tablet-up({
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "+";
+      font-size: 30px;
+      left: 260px;
+      top: 70px;
+    }
+    &::after {
+      position: absolute;
+      content: "+";
+      font-size: 30px;
+      right: 260px;
+      top: 70px;
+    }
+    });
+}
+.kitchen-look {
+  .for-tablet-up({
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "+";
+      font-size: 30px;
+      left: 260px;
+      top: 70px;
+    }
+    &::after {
+      position: absolute;
+      content: "+";
+      font-size: 30px;
+      right: 260px;
+      top: 70px;
+    }
+    });
+}
+.low-price-item {
+  position: relative;
+  padding-top: 60px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 100%;
+  .for-tablet-up({
+    display: inline-block;
+    vertical-align: top;
+    width: 27%;
+    margin-bottom: 0;
+    });
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+  }
+}
+.low-price-item-1 {
+  &::before {
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    background: url('../img/icons/low-price-item-1.png') no-repeat;
+  }
+}
+.low-price-item-2 {
+  &::before {
+    width: 51px;
+    height: 51px;
+    margin-left: -25px;
+    background: url('../img/icons/low-price-item-2.png') no-repeat;
+  }
+}
+.low-price-item-3 {
+  &::before {
+    width: 55px;
+    height: 51px;
+    margin-left: -25px;
+    background: url('../img/icons/low-price-item-3.png') no-repeat;
+  }
+}
+.item-description {
+  margin-top: 5px;
+}
+.kitchen-look-item {
+  position: relative;
+  padding-top: 60px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 100%;
+  .for-tablet-up({
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-bottom: 0;
+    });
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+  }
+}
+.kitchen-look-item-1 {
+  &::before {
+    width: 58px;
+    height: 50px;
+    margin-left: -25px;
+    background: url('../img/icons/kitchen-look-item-1.png') no-repeat;
+  }
+}
+.kitchen-look-item-2 {
+  &::before {
+    width: 52px;
+    height: 52px;
+    margin-left: -26px;
+    background: url('../img/icons/kitchen-look-item-2.png') no-repeat;
+  }
+}
+.kitchen-look-item-3 {
+  &::before {
+    width: 53px;
+    height: 52px;
+    margin-left: -26px;
+    background: url('../img/icons/kitchen-look-item-3.png') no-repeat;
+  }
+}

@@ -1,0 +1,138 @@
+.sheme-of-work {
+  .container();
+  text-align: center;
+  position: relative;
+}
+.sheme-of-work-item {
+  position: relative;
+  padding-top: 60px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 100%;
+  .for-tablet-up({
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    });
+  .for-desctop-up({
+    width: 16%;
+    });
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+  }
+}
+.sheme-of-work-item-1 {
+  &::before {
+    width: 53px;
+    height: 53px;
+    margin-left: -26px;
+    background: url('../img/icons/sheme-of-work-item-1.png') no-repeat;
+  }
+}
+.sheme-of-work-item-2 {
+  &::before {
+    width: 52px;
+    height: 53px;
+    margin-left: -26px;
+    background: url('../img/icons/sheme-of-work-item-2.png') no-repeat;
+  }
+}
+.sheme-of-work-item-3 {
+  &::before {
+    width: 44px;
+    height: 47px;
+    margin-left: -22px;
+    background: url('../img/icons/sheme-of-work-item-3.png') no-repeat;
+  }
+}
+.sheme-of-work-item-4 {
+  &::before {
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    background: url('../img/icons/sheme-of-work-item-4.png') no-repeat;
+  }
+}
+.sheme-of-work-item-5 {
+  &::before {
+    width: 53px;
+    height: 52px;
+    margin-left: -26px;
+    background: url('../img/icons/sheme-of-work-item-5.png') no-repeat;
+  }
+}
+.sheme-of-work-item-6 {
+  &::before {
+    width: 53px;
+    height: 52px;
+    margin-left: -26px;
+    background: url('../img/icons/sheme-of-work-item-6.png') no-repeat;
+  }
+}
+.sheme-of-work-description {
+  margin-top: 5px;
+  padding: 0 15px;
+}
+.plus {
+  display: none;
+  .for-tablet-up({
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    });
+}
+.plus1 {
+  .for-tablet-up({
+    top: 70px;
+    left: 250px;
+    });
+  .for-desctop-up({
+    top: 70px;
+    left: 190px;
+    });
+}
+.plus2 {
+  .for-tablet-up({
+    top: 70px;
+    right: 250px;
+    });
+  .for-desctop-up({
+    top: 70px;
+    left: 380px;
+    });
+}
+.plus3 {
+  .for-tablet-up({
+    top: 235px;
+    left: 250px;
+    });
+  .for-desctop-up({
+    top: 70px;
+    left: 570px;
+    });
+}
+.plus4 {
+  .for-tablet-up({
+    top: 235px;
+    right: 250px;
+    });
+  .for-desctop-up({
+    top: 70px;
+    right: 380px;
+    });
+}
+.plus5 {
+  .for-tablet-up({
+    display: none;
+    });
+  .for-desctop-up({
+    display: inline;
+    top: 70px;
+    right: 190px;
+    });
+}

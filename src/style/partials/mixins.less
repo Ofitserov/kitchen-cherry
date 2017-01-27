@@ -1,0 +1,83 @@
+.clearfix() {
+  &::before {
+    display: table;
+    clear: both;
+  }
+  &::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+.container() {
+  width: 310px;
+  margin: 0 auto;
+  .for-tablet-up({
+    width: 750px;
+    });
+  .for-desctop-up({
+    width: 1170px;
+    });
+}
+
+.container-header() {
+  width: 310px;
+  margin: 0 auto;
+  .for-tablet-up({
+    width: 760px;
+    });
+  .for-desctop-up({
+    width: 960px;
+    });
+}
+.container-about() {
+  width: 310px;
+  margin: 0 auto;
+  .for-tablet-up({
+    width: 750px;
+    });
+}
+.container-gallery() {
+  width: 310px;
+  margin: 0 auto;
+  .for-tablet-up({
+    width: 1000px;
+    });
+}
+.container-reviews() {
+  width: 310px;
+  margin: 0 auto;
+  .for-tablet-up({
+    width: 750px;
+    });
+  .for-desctop-up({
+    width: 960px;
+    });
+}
+.container-make-order() {
+  width: 310px;
+  margin: 0 auto;
+  .for-tablet-up({
+    width: 750px;
+    });
+}
+.container-main-footer() {
+  width: 310px;
+  margin: 0 auto;
+  .for-tablet-up({
+    width: 600px;
+    });
+}
+.for-phone-only(@rules) {
+  @media only screen and (min-width: 320px) and (max-width: 599px) {@rules();}
+}
+.for-tablet-up(@rules) {
+  @media (min-width: 760px) {@rules();}
+}
+.for-desctop-up( @rules ) {
+  @media (min-width: 1200px) {@rules();}
+}
+.for-large-desctop-up( @rules ) {
+  @media (min-width: 1800px) {@rules();}
+}

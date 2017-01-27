@@ -1,0 +1,25 @@
+{
+  "name": "new_project",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Vlad <ofitserov.vladimir@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-css": "normalize.css#^5.0.0",
+    "jquery": "^3.1.1",
+    "slick-carousel": "^1.6.0"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.6.0"
+  }
+}
