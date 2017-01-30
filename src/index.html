@@ -7,6 +7,9 @@
   <meta name="keywords" content="Купить кухню в Беларуси с доставкой">
   <title>Кухни черри - заказать кухню от фабрики с экономией.</title>
   <link rel="stylesheet" property="stylesheet" href="css/main.min.css">
+  <script>
+
+  </script>
 </head>
 <body>
   <header class="main-header">
@@ -40,8 +43,8 @@
         <p class="main-heading-footnote">*по сравнению с ценой в салонах</p>
         <form class="order-form" action="" method="POST" id="header-form" onsubmit="">
           <h2>Как сэкономить?</h2>
-          <input oninput="removeError(this);" type="text" name="username" value="" placeholder="Введите имя*">
-          <input oninput="removeError(this);" type="tel" name="userphone" value="" placeholder="Телефон*">
+          <input class="required" type="text" name="username" value="" placeholder="Введите имя*">
+          <input class="required" type="tel" name="userphone" value="" placeholder="Телефон*">
           <button class="order-btn order-btn-header" type="submit" name="btnSubmit">Узнать подробности</button>
         </form>
       </div>
@@ -134,7 +137,7 @@
     <section class="call-back bounceInRight wow">
       <h2>Есть вопросы? Перезвоним!</h2>
       <form class="order-form call-back-form" action="" method="post" id="call-back">
-        <input oninput="removeError(this);" type="tel" name="userphone" value="" placeholder="Введите номер телефона*">
+        <input class="required" type="tel" name="userphone" value="" placeholder="Введите номер телефона*">
         <button class="order-btn order-btn-call-back order-btn-pink" type="submit" name="submit">Заказать звонок</button>
       </form>
     </section>
@@ -172,7 +175,7 @@
             <div class="review-item review-item-4">
               <p class="review-name">Иван, минск</p>
               <p class="review-content">
-                Работаю предпринимателем, и как любой здаромыслящий человек повелся на цену. Только вот собирать самому ничего не хотелось, привык больше руководить. Но это не оказалось проблемой, фабрика кухонь Черри предложили проверенных сборщиков, с которым я заключил отдельный договор.
+                Работаю предпринимателем, и как любой здравомыслящий человек повелся на цену. Только вот собирать самому ничего не хотелось, привык больше руководить. Но это не оказалось проблемой, фабрика кухонь Черри предложили проверенных сборщиков, с которым я заключил отдельный договор.
                 Кухней и экономией доволен.
               </p>
             </div>
@@ -185,8 +188,8 @@
         <h2>Есть готовый проект? Отправляйте на просчет!</h2>
         <form class="order-form make-order-form" id="file-form" action="test.php" method="post" enctype="multipart/form-data">
           <p>Заполните заявку и прикрепите файл с проектом</p>
-          <input oninput="removeError(this);" type="text" name="username" value="" placeholder="Имя*">
-          <input oninput="removeError(this);" type="tel" name="userphone" value="" placeholder="Телефон*">
+          <input class="required" type="text" name="username" value="" placeholder="Имя*">
+          <input class="required" type="tel" name="userphone" value="" placeholder="Телефон*">
           <label class="file" for="myfile">Прикрепить файл (до 5 мб)</label>
           <input type="file" id="myfile" name="file" placeholder="Обзор">
           <button class="order-btn order-btn-pink make-order-btn" type="submit" name="submit">Рассчитать</button>
@@ -220,8 +223,8 @@
   <div class="modal-content">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <form class="order-form modal-order-form" id="modal-form" action="#" method="post">
-      <input oninput="removeError(this);" type="text" name="username" value="" placeholder="Введите имя*">
-      <input oninput="removeError(this);" type="tel" name="userphone" value="" placeholder="Телефон*">
+      <input class="required" type="text" name="username" value="" placeholder="Введите имя*">
+      <input class="required" type="tel" name="userphone" value="" placeholder="Телефон*">
       <button class="order-btn modal-order-btn" type="submit" name="btnSubmit">Стать диллером</button>
     </form>
   </div>
@@ -235,7 +238,8 @@
   </div>
   <div class="modal-overlay"></div>
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ek-JfCdSzOcnTT3uSaY5dgz2eDGiGNTg&amp;width=100%25&amp;height=320&id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
-<script src="js/main-min.js"></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42438469 = new Ya.Metrika({ id:42438469, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42438469" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<script src="js/main.min.js"></script>
 
 </body>
 </html>

@@ -1,13 +1,7 @@
+import init from './partials/init'
+//import { removeError } from './partials/remove-error';
+const initAll = init();
 
-//= partials/jquery.js
-//= partials/slick.js
-
-
-/*
- * Custom
- */
-//= partials/slickCustom.js
-//= partials/burger-nav.js
-//= partials/anchor.js
-//= partials/modal-form.js
-//= partials/form-validation.js
+function removeError(element) {
+  element.classList.remove('error');
+};
