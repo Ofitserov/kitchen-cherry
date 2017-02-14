@@ -1,10 +1,107 @@
 .about {
-  .container-about();
+
   text-align: center;
   padding-top: 1px;
   padding-bottom: 1px;
 }
+.about-text {
+  .container-about();
+  margin-bottom: 40px;
+}
+.manufacture-main {
+  background: @footer-bg-color;
+}
+.manufacture-wrap {
+  .for-tablet-up({
+    .container();
+  });
+}
+.manufacture-img {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  min-height: 300px;
+  background-image: url('../img/about-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  .for-tablet-up({
+    width: 60%;
+    min-height: 400px;
+    });
+  .for-desctop-up({
+    min-height: 500px;
+      });
+}
+.manufacture-text {
+  display: none;
+  .for-tablet-up({
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 0 20px;
+    min-height: 400px;
+    width: 37%;
+    font-size: 16px;
+    });
+  .for-desctop-up({
+    min-height: 500px;
+    font-size: 18px;
+    });
+
+}
+.manufacture-text ul {
+  padding: 0;
+}
+.manufacture-text-item {
+  .for-tablet-up({
+    position: relative;
+    margin-bottom: 90px;
+    padding-right: 30px;
+    list-style: none;
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: -26px;
+      width: 47px;
+      height: 47px;
+    }
+    &:last-child{
+      margin: 0;
+    }
+    });
+  .for-desctop-up({
+    margin-bottom: 120px;
+    });
+}
+.manufacture-text-item-1 {
+  .for-tablet-up({
+    &::before {
+      background: url('../img/icons/manuf-ico1.png') no-repeat;
+    }
+    });
+}
+.manufacture-text-item-2 {
+  .for-tablet-up({
+    &::before {
+      background: url('../img/icons/manuf-ico2.png') no-repeat;
+    }
+    });
+}
+.manufacture-text-item-3 {
+  .for-tablet-up({
+    &::before {
+      background: url('../img/icons/manuf-ico3.png') no-repeat;
+    }
+    });
+}
 .low-price {
+  .container-about();
   .for-tablet-up({
     position: relative;
     &::before {
@@ -23,7 +120,9 @@
     }
     });
 }
+
 .kitchen-look {
+  .container-about();
   .for-tablet-up({
     position: relative;
     &::before {
@@ -42,6 +141,7 @@
     }
     });
 }
+
 .low-price-item {
   position: relative;
   padding-top: 60px;

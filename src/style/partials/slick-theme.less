@@ -38,12 +38,12 @@
     z-index: 1;
     position: absolute;
     display: block;
-    height: 30px;
-    width: 30px;
+    height: 100%;
+    width: 45px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.3);
     color: transparent;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -52,9 +52,9 @@
     padding: 0;
     border: none;
     outline: none;
-    &:hover, &:focus {
+    &:hover {
         outline: none;
-        background: transparent;
+        background: rgba(255, 255, 255, 0.6);
         color: transparent;
         &:before {
             opacity: @slick-opacity-on-hover;
@@ -63,13 +63,30 @@
     &.slick-disabled:before {
         opacity: @slick-opacity-not-active;
     }
+    .for-tablet-up({
+      width: 90px;
+      });
 }
-
+.slick-prev {
+    left: 0;
+    &[dir="rtl"] {
+        left: auto;
+        right: 15px;
+    }
+}
+.slick-next {
+    right: 0;
+    &[dir="rtl"] {
+        left: 15px;
+        right: auto;
+    }
+}
 .slick-prev::before, .slick-next::before {
     position: absolute;
     z-index: 2;
-    top:0;
+    top:50%;
     left:0;
+    margin-top: -60px;
     font-family: @slick-font-family;
     font-size: 25px;
     line-height: 1;
@@ -77,36 +94,35 @@
     opacity: @slick-opacity-default;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-.slick-next::before{
-  content: @slick-next-character;
-}
-.slick-prev {
-    left: 15px;
-    &[dir="rtl"] {
-        left: auto;
-        right: 15px;
-    }
-    &:before {
-        content: @slick-prev-character;
-        &[dir="rtl"] {
-            content: @slick-next-character;
-        }
-    }
+    .for-tablet-up({
+      margin-top: -120px;
+      });
 }
 
-.slick-next {
-    right: 15px;
-    &[dir="rtl"] {
-        left: 15px;
-        right: auto;
-    }
-    &:before {
-        content: @slick-next-character;
-        &[dir="rtl"] {
-            content: @slick-prev-character;
-        }
-    }
+.slick-prev::before {
+  content: "";
+  width: 45px;
+  height: 120px;
+  background: url('../img/icons/mobile-prev.png') no-repeat;
+  .for-tablet-up({
+    width: 90px;
+    height: 240px;
+    background: url('../img/icons/prev.png') no-repeat;
+    });
+}
+
+.slick-next::before {
+  content: "";
+  width: 45px;
+  height: 120px;
+  background: url('../img/icons/mobile-next.png') no-repeat;
+  .for-tablet-up({
+    content: "";
+    width: 90px;
+    height: 240px;
+    background: url('../img/icons/next.png') no-repeat;
+    });
+
 }
 
 /* Dots */

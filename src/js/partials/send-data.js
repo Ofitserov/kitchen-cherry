@@ -6,10 +6,12 @@ export default () =>
   const callBackForm = document.getElementById('call-back');
   const fileForm = document.getElementById('file-form');
   const modalForm = document.getElementById('modal-form');
+  const modalFormGallery = document.getElementById('modal-form-gallery');
   const modalSuccess = document.querySelector('.modal-success');
   const modalSuccessClose = document.querySelector('.modal-success-close');
   const overlay = document.querySelector('.modal-overlay');
   const modalContent = document.querySelector('.modal-content');
+  const modalGallery = document.querySelector('.modal-gallery');
   const myFileInput = document.getElementById('myfile');
   const labelFile = document.querySelector('.file');
 
@@ -126,6 +128,13 @@ export default () =>
     if(isValid(this)) {
         sendData(this, 'mail.php');
         modalContent.classList.remove("modal-content-show");
+    }
+  });
+  modalFormGallery.addEventListener("submit", function(e){
+    e.preventDefault();
+    if(isValid(this)) {
+        sendData(this, 'mail.php');
+        modalGallery.classList.remove("modal-gallery-show");
     }
   });
   // close SucceessModal

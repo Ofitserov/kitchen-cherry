@@ -10,6 +10,7 @@ const spritesConfig = {
       return Promise.reject();
     }
     return Promise.resolve();
-    }
+  }
+
 };
 export default spritesConfig;

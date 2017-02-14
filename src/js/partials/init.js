@@ -4,8 +4,9 @@ import modalForm from './modal-form';
 import sendData from './send-data';
 import removeError from './remove-error';
 import slick from './slick';
-import { WOW } from 'wowjs';
-
+import animate from './animate';
+import kitchenInfo from './kitchen-info';
+import infoBtn from './info-btn';
 
 export default () => {
  const initScrollingToAnchor = scrollingToAnchor();
@@ -14,5 +15,7 @@ export default () => {
  const initSendData = sendData();
  const initRemoveError = removeError();
  const initSlick = slick();
- const wow = new WOW().init();
+ const initAnimate = animate();
+ const initKitchenInfo = kitchenInfo();
+ const initInfoBtn = infoBtn();
 }

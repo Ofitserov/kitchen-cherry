@@ -7,27 +7,125 @@
   .container();
   margin: 30px auto;
 }
+
+.gallery-wrap {
+  position: relative;
+  .for-tablet-up({
+    margin: 0 auto;
+    max-width: 1000px;
+    });
+}
+.kitchen-info {
+  position: absolute;
+  content: "";
+  left: 15%;
+  top: 0;
+  background: rgba(255, 255, 255, 0.7);
+  color: black;
+  text-align: left;
+  z-index: 10;
+
+}
+.kitchen-info h3 {
+  font-size: 14px;
+  margin: 5px 10px 5px 10px;
+  .for-tablet-up({
+    font-size: 20px;
+    });
+
+}
+.buy-kitchen {
+  position: relative;
+  padding-right: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    width: 13px;
+    height: 14px;
+    background: url('../img/icons/info-btn-sm.png') no-repeat;
+    z-index: 1;
+    .for-tablet-up({
+      top: 4px;
+      right: 5px;
+      });
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: @main-btn-bg;
+    text-align: center;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    .for-tablet-up({
+      top: 1px;
+      width: 21px;
+      height: 21px;
+      });
+  }
+}
+.buy-kitchen-hover {
+  &::after {
+    opacity: 0.8;
+    animation-iteration-count: 0;
+  }
+}
+.info-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: transparent;
+  z-index: 2;
+  cursor: pointer;
+  .for-tablet-up({
+    top: 1px;
+    width: 21px;
+    height: 21px;
+    });
+}
+
+
+.kitchen-info div {
+  margin: 5px 10px 5px 10px;
+  font-size: 10px;
+  font-weight: 300;
+  .for-tablet-up({
+    font-size: 14px;
+    });
+}
+.kitchen-info .price {
+  font-size: 14px;
+  font-weight: 400;
+  .for-tablet-up({
+    font-size: 20px;
+    });
+}
+.slick-gallery {
+  .for-tablet-up({
+    margin: 0 auto;
+    max-width: 1000px;
+    });
+}
 .slick-gallery img {
   min-width: 320px;
   width: 100%;
   .for-tablet-up({
     width: 100%;
     });
-
-
 }
-.slick-gallery {
-    margin: 0 auto;
-    max-width: 414px;
-  .for-tablet-up({
-    margin: 0 auto;
-    max-width: 1000px;
-    });
-}
-.gallery-order {
-  position: relative;
 
-}
 .gallery-order-btn {
   position: absolute;
   content: "";
@@ -44,7 +142,7 @@
   position: absolute;
   box-sizing: border-box;
   left: 10%;
-  top: 10%;
+  top: 0;
   width: 200px;
   height: 50px;
   padding: 10px 0;

@@ -1,7 +1,4 @@
-import init from './partials/init'
-//import { removeError } from './partials/remove-error';
-const initAll = init();
+import init from './partials/init';
 
-function removeError(element) {
-  element.classList.remove('error');
-};
+//import bootstrap from 'bootstrap';
+const initAll = init();
